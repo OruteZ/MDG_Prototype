@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             Vector2 direction = ((Vector2)mouseWorld - (Vector2)spawnPos).normalized;
 
             // 4) Rigidbody2D에 속도 적용
-            var projRb2D = proj.GetComponent<Rigidbody2D>();
+            Rigidbody2D projRb2D = proj.GetComponent<Rigidbody2D>();
             if (projRb2D != null)
             {
                 projRb2D.linearVelocity = direction * projectileSpeed;

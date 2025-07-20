@@ -65,6 +65,6 @@ public class GameManager : MonoBehaviour
     public void BackToTitle()
     {
         // 타이틀 화면으로 돌아가기
-        UnityEngine.SceneManagement.SceneManager.LoadScene("TitleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
     }
 }
